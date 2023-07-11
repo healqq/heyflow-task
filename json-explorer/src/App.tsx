@@ -12,6 +12,25 @@ function App() {
         prop: "iban",
         value: "DE81200505501265402568",
         hasError: false,
+        fancyNullKey: null,
+        fields: [
+          {
+            id: "4c212130",
+            prop: "iban",
+            value: "DE81200505501265402568",
+            hasError: false,
+          },
+          {
+            fields: [
+              {
+                id: "4c212130",
+                prop: "iban",
+                value: "DE81200505501265402568",
+                hasError: false,
+              },
+            ],
+          },
+        ],
       },
     ],
   };
