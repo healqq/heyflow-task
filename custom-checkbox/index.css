@@ -40,7 +40,6 @@
   /* https://caniuse.com/outline */
   outline: 1px ridge var(--checkbox-color-outline);
   outline-offset: 1px;
-  
 }
 
 .checkbox__input:checked + .checkbox__element {
@@ -54,7 +53,6 @@
 .checkbox__label {
   margin-left: var(--spacing-1);
 }
-
 
 /* not relevant */
 .line {

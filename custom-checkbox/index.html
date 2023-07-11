@@ -1,50 +1,53 @@
-<!doctype html>
-<link rel='stylesheet' href="index.css" />
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css" />
 <html>
   <head>
     <title>Custom checkbox demo</title>
   </head>
   <body>
     <!-- Checkbox with native visible -->
-    <div class='line'>
-      <label class='checkbox'>
-        <input type="checkbox" class='checkbox__input'/>
-        <div class='checkbox__element'>
+    <div class="line">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" />
+        <div class="checkbox__element" role="presentation">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
             <rect width="256" height="256" fill="none"></rect>
             <polyline
-            class='checkbox__tick'
-            points="216 72.005 104 184 48 128.005"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16">
-            </polyline>
-            </svg>
-          </div>
-          <span class='checkbox__label'>Label</span>
+              class="checkbox__tick"
+              points="216 72.005 104 184 48 128.005"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+        <span class="checkbox__label">Label</span>
       </label>
     </div>
     <!-- Checkbox with native hidden -->
-    <div class='line'>
-      <label class='checkbox'>
-        <input type="checkbox" class='checkbox__input checkbox__input--hidden'/>
-        <div class='checkbox__element'>
+    <div class="line">
+      <label class="checkbox">
+        <input
+          type="checkbox"
+          class="checkbox__input checkbox__input--hidden"
+        />
+        <div class="checkbox__element" role="presentation">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
             <rect width="256" height="256" fill="none"></rect>
             <polyline
-            class='checkbox__tick'
-            points="216 72.005 104 184 48 128.005"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16">
-            </polyline>
-            </svg>
-          </div>
-          <span class='checkbox__label'>Label</span>
+              class="checkbox__tick"
+              points="216 72.005 104 184 48 128.005"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+        <span class="checkbox__label">Label</span>
       </label>
     </div>
   </body>
