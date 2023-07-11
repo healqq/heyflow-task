@@ -37,12 +37,13 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './custom-checkbox'
+          path: "./custom-checkbox"
       - name: Set up Node
+        working-directory: ./json-explorer
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm install
       - name: Build
@@ -52,7 +53,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './json-explorer/dist'
+          path: "./json-explorer/dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
