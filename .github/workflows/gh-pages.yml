@@ -49,7 +49,7 @@ jobs:
         run: mkdir ./dist && mkdir ./dist/custom-checkbox && cp -r ./custom-checkbox/ ./dist/custom-checkbox/
 
       - name: Copy json-explorer files
-        run: mkdir ./dist/json-explorer && cp -r ./json-explorer/ ./dist/json-explorer/
+        run: mkdir ./dist/json-explorer && cp -r ./json-explorer/dist ./dist/json-explorer/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
