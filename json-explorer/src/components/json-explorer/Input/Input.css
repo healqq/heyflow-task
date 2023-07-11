@@ -1,0 +1,24 @@
+.input__wrapper {
+  display: grid;
+  grid-template:
+    "label preview"
+    "input preview";
+  grid-template-columns: min-content auto;
+}
+
+.input {
+  grid-area: input;
+}
+
+.input__label {
+  grid-area: label;
+  text-align: start;
+}
+
+.input__preview {
+  grid-area: preview;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.4rem;
+}
