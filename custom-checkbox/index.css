@@ -1,0 +1,62 @@
+.checkbox {
+  /* colors */
+  --checkbox-color: #000;
+  --checkbox-color-outline: rgba(3, 0, 209, 0.6);
+  --checkbox-tick-color: #fff;
+  /* sizes */
+  --checkbox-size: 1.4rem;
+  --spacing-1: 4px;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox__element {
+  height: var(--checkbox-size);
+  width: var(--checkbox-size);
+  border: 1px solid var(--checkbox-color);
+  border-radius: var(--spacing-1);
+  transition: background-color 0.1s linear;
+  color: var(--checkbox-tick-color);
+}
+
+/* still allow element to be focused */
+.checkbox__input--hidden {
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.checkbox__tick {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  transition: stroke-dashoffset 0.1s 0.1s ease-out;
+}
+
+.checkbox__input:focus + .checkbox__element {
+  /* https://caniuse.com/outline */
+  outline: 1px ridge var(--checkbox-color-outline);
+  outline-offset: 1px;
+  
+}
+
+.checkbox__input:checked + .checkbox__element {
+  background-color: var(--checkbox-color);
+}
+
+.checkbox__input:checked + .checkbox__element .checkbox__tick {
+  stroke-dashoffset: 0;
+}
+
+.checkbox__label {
+  margin-left: var(--spacing-1);
+}
+
+
+/* not relevant */
+.line {
+  padding: 8px 0;
+}
