@@ -43,6 +43,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
+        working-directory: ./json-explorer
         run: npm install
       - name: Build
         working-directory: ./json-explorer
